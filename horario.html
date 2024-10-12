@@ -6,17 +6,22 @@
     <title>HORARIS</title>
 </head>
 <style>
+    * {
+        font-family: verdana;
+    }
     table {
         width: 100%;
         border: 1px solid black;
         border-collapse: collapse;
         margin: auto;
+        text-align: center;
     }
     th{
         border: 1px solid black; 
         width: 100 px;
-        text-align: center;
         font-weight: bold;
+        padding: 30px;
+        font-size: 25px;
     }
     td {
         border: 1px solid black; 
@@ -31,7 +36,41 @@
         font-size: 25px;
 
     }
-    
+    .P {
+      background-color: #5F9EA0;
+    }
+    .bd{
+        background-color: #FFF8DC
+    }
+    .lmsgi{
+        background-color: lightpink;  
+    }
+    .si{
+        background-color: #FFFF00; 
+    }
+    .ipoi{
+        background-color: #DC143C;
+    }
+    .tut{
+        background-color: #6495ED;
+    }
+    .an{
+        background-color:#FFD700 ;
+    }
+    .diw{ 
+        background-color: #FF7F50;
+    }
+    .desc{
+        font-size: 20px;
+        padding: 15px;
+      
+ 
+    }
+    .hores{
+        font-size: 20px;
+        padding: 10px;
+        width: 180px;
+    }
         
 </style>
 <body>
@@ -47,52 +86,42 @@
             <th>Divendres</th>
         </tr>
         <tr>
-            <td>8:00 - 9:00 </td>
+            <td class="hores">8:00 - 9:00 </td>
             
-            <td style="background-color: lightpink;">LMSGI</td>
-            <td style="background-color: #FFF8DC;">BD</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-            <td style="background-color: #FFFF00;">SI</td>
-            <td style="background-color: #FFF8DC;">BD</td>
+            <td class="lmsgi" rowspan="2">LMSGI</td>
+            <td class="bd" rowspan="2">BD</td>
+            <td class="P" rowspan="2">P+ED</td>
+            <td class="si" rowspan="2">SI</td>
+            <td class="bd" rowspan="2">BD</td>
         <tr>
-            <td> 9:00 - 10:00</td>
+            <td class="hores"> 9:00 - 10:00</td>
             
-            <td style="background-color: lightpink;">LMSGI</td>
-            <td style="background-color: #FFF8DC;">BD</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-            <td style="background-color: #FFFF00;">SI</td>
-            <td style="background-color: #FFF8DC;">BD</td>
+          
+        <tr>
+            <td class="hores"> 10:00 - 11:00</td>
+            <td class="P">P+ED</td>
+            <td class="tut">TUT</td>
+            <td class="an">AN</td>
+            <td class="P">P+ED</td>
+            <td class="P">P+ED</td>
+        </tr>
+        <tr >
+            <td class="desc" colspan="6" > Descans</td>
+            
+        <tr>
+            <td class="hores">11:30 - 12:30 </td>
+            <td class="P">P+ED</td>
+            <td class="diw" rowspan="2">DIW</td>
+            <td class="ipoi" rowspan="2">IPOI</td>
+            <td class="P" rowspan="2">P+ED</td>
+            <td class="P">P+ED</td>
         </tr>
         <tr>
-            <td> 10:00 - 11:00</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-            <td style="background-color: #6495ED;">TUT</td>
-            <td style="background-color:#FFD700 ;">AN</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-        </tr>
-        <tr>
-            <td> Descans</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        <tr>
-            <td>11:30 - 12:30 </td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-            <td style="background-color: #FF7F50;">DIW</td>
-            <td style="background-color: #DC143C;">IPOI</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-        </tr>
-        <tr>
-            <td>12:30 - 13:30 </td>
-            <td style="background-color: #FF7F50;">DIW</td>
-            <td style="background-color: #DC143C;">IPOI</td>
-            <td style="background-color: #DC143C;">IPOI</td>
-            <td style="background-color: #5F9EA0;">P+ED</td>
-            <td style="background-color: #FFFF00;">SI</td>
+            <td class="hores">12:30 - 13:30 </td>
+            <td class="ipoi">IPOI</td>
+           
+            
+            <td class="si" >SI</td>
         </tr>
     </table>
 </body>
